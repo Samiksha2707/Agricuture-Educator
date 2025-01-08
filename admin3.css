@@ -1,0 +1,117 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container */
+.login-container {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table for login form */
+.login-table {
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.login-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.login-table label {
+    font-size: 16px;
+    color: #333;
+}
+
+.login-table input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.login-table input:focus {
+    border-color: #3498db;
+}
+
+/* Submit button */
+.submit-btn-cell {
+    text-align: center;
+}
+
+button {
+  background-color:#4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 15px 32px;        /* Padding inside the button */
+  border: none;              /* Remove border */
+  border-radius: 5px;        /* Rounded corners */
+  font-size: 16px;           /* Font size */
+  cursor: pointer;          /* Cursor changes to a pointer when hovering */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green when hovered */
+}
+
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .login-container {
+        padding: 30px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+}
+.logo{
+    position: fixed;  /* Keep the logo fixed in place while scrolling */
+    top: 5%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 50px;
+}
+.container {
+  position: relative; /* Ensure the container is positioned to allow absolute positioning inside it */
+}
+
+.close-btn {
+  position: absolute; /* Position the button absolutely inside the container */
+  right: 0;           /* Align the button to the right edge of the container */
+  top: 0;             /* Optionally, you can also specify 'top' to place it at the top of the container */
+}

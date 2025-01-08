@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup2.css">
+</head>
+<style>
+body {
+  background-image: url('crop5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<body>
+<header>
+        <div class="logo-container">
+            <img src="crop2.jpeg" alt="Logo" class="logo">
+        </div>
+    </header>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Create an Account</h2>
+            <form action="signup.php" method="POST">
+                <div class="textbox">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="textbox">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="textbox">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="textbox">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="login-link">Already have an account? <a href="login 2.html">Log in here</a></p>
+            </form>
+            <div class="button-container">
+                <button onclick="window.location.href='Agro.html'" class="close-btn">X</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

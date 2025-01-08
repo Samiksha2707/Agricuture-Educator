@@ -1,0 +1,138 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.signup-box {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.textbox {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.textbox label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.textbox input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+.transparent-img {
+    opacity: 0.2;  /* 50% transparency */
+}
+.logo{
+    position: fixed;  /* Keep the logo fixed in place while scrolling */
+    top: 5%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 50px;
+}
+.container {
+  position: relative; /* Ensure the container is positioned to allow absolute positioning inside it */
+}
+
+/*.close-btn {
+  position: absolute; /* Position the button absolutely inside the container */
+ /* right: 0;           /* Align the button to the right edge of the container */
+ /* top: 0;             /* Optionally, you can also specify 'top' to place it at the top of the container */
+/*}
+
+  .close-btn {
+  position: absolute;   /* Position the button inside the container */
+ 
+  .close-btn {
+    position: absolute;   /* Position the button inside the container */
+    top: 10px;            /* Add spacing from the top for better alignment */
+    right: 10px;          /* Add spacing from the right for better alignment */
+    background-color: transparent; /* Transparent background for minimalism */
+    border: none;         /* Remove default button border */
+    font-size: 20px;      /* Increase size for better visibility */
+    cursor: pointer;      /* Add pointer cursor on hover */
+    padding: 5px;         /* Add padding for clickable area */
+    border-radius: 50%;   /* Optional: Make it circular */
+    color: #333;          /* Set a default color */
+  }
+  
+  .close-btn:hover {
+    background-color: #f2f2f2;  /* Add hover effect for better feedback */
+    color: #e74c3c;             /* Change color on hover */
+  }
+
+  
